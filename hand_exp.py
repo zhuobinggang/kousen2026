@@ -1,4 +1,4 @@
-# 打印ver2前100行的文字，然后让gemini帮我判断是否悲伤
+# 打印ver2前50行的文字，然后手动评估
 import pandas as pd
 
 # 1. 定义需要保留的列名（Sentence + 9 个 Writer 情感列）

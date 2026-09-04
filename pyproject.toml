@@ -1,0 +1,23 @@
+[project]
+name = "kousen2026"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "zhuobinggang", email = "zhuobinggang@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "mecab-python3>=1.0.12",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "scikit-learn>=1.9.0",
+    "unidic-lite>=1.0.8",
+]
+
+[project.scripts]
+kousen2026 = "kousen2026:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
