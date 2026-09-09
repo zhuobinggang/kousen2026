@@ -8,10 +8,12 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "datasets>=5.0.1",
     "mecab-python3>=1.0.12",
     "numpy>=2.5.2",
     "pandas>=3.0.5",
     "scikit-learn>=1.9.0",
+    "setfit>=1.2.0",
     "unidic-lite>=1.0.8",
 ]
 
