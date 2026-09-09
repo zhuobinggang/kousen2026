@@ -31,13 +31,13 @@ model = SetFitModel.from_pretrained(model_id)
 # 4. 配置训练参数
 args = TrainingArguments(
     batch_size=16,
-    num_epochs=1,              # 对比学习迭代轮数，小数据集通常 1-2 轮即可
-    num_iterations=20,         # 每个样本采样的正负对数量（生成 180 * 20 对样本）
-    evaluation_strategy="steps",
+    num_epochs=1,
+    num_iterations=20,
+    body_learning_rate=2e-5,   # 原来 learning_rate 对应的参数名
+    eval_strategy="steps",     # 新版参数名为 eval_strategy
     eval_steps=50,
     save_steps=50,
     load_best_model_at_end=True,
-    learning_rate=2e-5,
 )
 
 def compute_metrics(y_pred, y_test):
