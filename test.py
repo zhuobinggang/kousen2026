@@ -16,4 +16,4 @@ sentences = []
 labels = []
 for index, row in df.iterrows():
     sentences.append(row['Sentence'])
-    labels.append(1 if row['Writer_Sadness'] > 0 else 0)
+    labels.append(1 if row['Writer_Joy'] > 0 else 0)
