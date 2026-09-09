@@ -25,7 +25,7 @@ test_dataset = Dataset.from_pandas(test_df, preserve_index=False)
 
 # 3. 初始化 SetFit 模型
 # 推荐使用名古屋大学开源的高质量日语表征模型，或多语言 paraphrase-multilingual-mpnet-base-v2
-model_id = "cl-nagoya/sup-simcse-ja-base"
+model_id = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 model = SetFitModel.from_pretrained(model_id)
 
 # 4. 配置训练参数

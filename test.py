@@ -23,7 +23,7 @@ test_sentences = sentences[18000:]
 train_labels = labels[:18000]
 test_labels = labels[18000:]
 
-# DONE
+# TODO
 vocab = texts2vocab(train_sentences) # 分詞、sort、辞書を作る
 train_sentence_bows = texts2bows(vocab, train_sentences) # 18000個のbowリストを得る
 test_sentence_bows = texts2bows(vocab, test_sentences)
