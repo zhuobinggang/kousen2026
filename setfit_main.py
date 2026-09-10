@@ -5,12 +5,12 @@ from sklearn.metrics import accuracy_score, precision_recall_fscore_support
 
 # ================= 自分のデータ =================
 # sentences: ["今日の天気がいい。", "ご飯を食べましょう。"]
-train_sentences = []  # 0~99
-test_sentences = []   # 100~199
+train_sentences = ["今日の天気がいい。", "ご飯を食べましょう。"]  # 0~99
+test_sentences = ["今日の天気がいい。", "ご飯を食べましょう。"]   # 100~199
 
 # labels: [1, 0]
-train_labels = []     # 0~99
-test_labels = []      # 100~199
+train_labels = [1,0]     # 0~99
+test_labels = [1,0]      # 100~199
 # ===============================================
 
 train_dataset = Dataset.from_dict({
