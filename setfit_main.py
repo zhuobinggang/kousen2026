@@ -27,9 +27,9 @@ model_id = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 model = SetFitModel.from_pretrained(model_id)
 
 args = TrainingArguments(
-    batch_size=16,
+    batch_size=8,
     num_epochs=1,
-    num_iterations=20,
+    num_iterations=10,
     body_learning_rate=2e-5,   
     eval_strategy="steps",    
     eval_steps=50,
